@@ -14,11 +14,13 @@ function App() {
        <BrowserRouter>
           <Suspense fallback={<div className="flex flex-col justify-center items-center align-middle bg-slate-200 h-full w-full"><img src={img} alt="loding..." /><h3 className="mt-15">LODING...</h3></div>}>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/annoucements" element={<Anno />} />
-          <Route exact path="/rules" element={<Rule/>}/>
-          <Route exact path="/contact" element={<Contact />} />
+          <Route index element={<Home/>} />
+          <Route  path="/" element={<Home />} />
+          <Route  path="/about" element={<About />} />
+          <Route  path="/annoucements" element={<Anno />} />
+          <Route  path="/rules" element={<Rule/>}/>
+          <Route  path="/contact" element={<Contact />} />
+          {/* </Route> */}
           <Route exact path="*" element={<Error />} />
         </Routes>
           </Suspense>

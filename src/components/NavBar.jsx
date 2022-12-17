@@ -1,18 +1,15 @@
 
 import { useState } from "react";
-// import {
-//   Outlet,
-//   Link
-// } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import { icons8menusquared,icons8closewindow } from "../assets";
 import img from "../assets/GAT-logo.png";
 
 const Navbar = () => {
   let Links =[
-          {name:"About",link:"/about",id:1},
-         {name:"Annoucements",link:"/annoucements",id:2},
-          {name:"Rules",link:"/rules",id:3},
-          {name:"Contact",link:"/contact",id:4},
+          {name:"About",link:"about",id:1},
+         {name:"Annoucements",link:"annoucements",id:2},
+          {name:"Rules",link:"rules",id:3},
+          {name:"Contact",link:"contact",id:4},
           
         ];
   const [active, setActive] = useState("Home");
@@ -31,7 +28,7 @@ const Navbar = () => {
             } `}   
             onClick={() => setActive(link.name)}
           >
-            <a href={`${link.name}`}>{link.name}</a>
+            <Link to={`${link.link}`}>{link.name}</Link>
           </li>
         ))}
       </ul>
@@ -58,7 +55,7 @@ const Navbar = () => {
                 } `}
                 onClick={() => setActive(link.name)}
               >
-                <a href={`${link.link}`}>{link.name}</a>
+                <Link to={`${link.link}`}>{link.name}</Link>
               </li>
             ))}
           </ul>
