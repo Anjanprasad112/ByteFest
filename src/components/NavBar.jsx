@@ -25,7 +25,7 @@ const Navbar = () => {
           <li
             key={link.id}
             className={`font-montserrat font-normal cursor-pointer text-[20px] ${
-              active === link.name ? "text-blue-700" : "text-gray-400"
+              active === link.name ? "text-blue-600" : "text-gray-400"
             } `}   
             onClick={() => setActive(link.name)}
           >

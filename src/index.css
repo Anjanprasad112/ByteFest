@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Orbitron&family=Ubuntu&display=swap');
 
+@font-face{
+  font-family:Imported;
+  src: url('./font/neolatina.ttf');
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 *{
-  font-family: 'Montserrat', sans-serif;
+  font-family:'Montserrat','Ubuntu';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,10 +29,13 @@
 .outline {
   background-color: transparent!important;
 }
+.font-neo{
+  font-family:Imported;
+}
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold
+    @apply text-4xl font-bold font-neo
   }
 
   li {

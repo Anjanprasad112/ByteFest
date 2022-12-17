@@ -15,10 +15,10 @@ const Hero = () => {
         muted
       />
       <div className='w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center'>
-        <h1>BYTE FEST 2.0</h1>
-        <p className='text-xl py-4'>
+        <h1 className='text-6xl font-semibold'>BYTE FEST <span className='text-5xl font-dot '>2.0</span> </h1>
+        <h1 className='text-xl py-4 font-normal'>
           THINK. CODE. LEARN.
-        </p>
+        </h1>
         <div>
           <button className='m-2 ' onClick={() => openInNewTab('https://forms.gle/unow5HxUortBNQPBA')}>Register Now</button>
         </div>
