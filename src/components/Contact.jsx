@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from './Footer'
-import NavBar from './NavBar'
 import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
@@ -17,7 +16,6 @@ const Contact = () => {
     }
   return (
     <div>
-        <NavBar/>
         <div className="h-96 flex flex-col items-center justify-center"><h1 className="text-center m-2">Contact Us</h1>
         <div className="">
             <p className="m-4">Anoop R - <span><button onClick={callone} className="text-white">Call</button></span></p>

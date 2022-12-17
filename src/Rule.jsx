@@ -1,5 +1,4 @@
 import React from 'react'
-import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +10,6 @@ const Rule = () => {
     }
   return (
     <div className="h-96">
-        <NavBar/>
         <div className="h-96"><p>
         Stay tuned for more updates...
             </p>

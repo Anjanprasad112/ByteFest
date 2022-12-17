@@ -6,6 +6,7 @@ const Anno = lazy(()=>import('./Anno'));
 const Contact = lazy(()=>import('./components/Contact'));
 const Error = lazy(()=>import('./Error'));
 const Rule = lazy(()=>import('./Rule'));
+const NavBar = lazy(()=>import('./components/NavBar'));
 import img from './assets/lodinggears.svg';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div>
        <BrowserRouter>
           <Suspense fallback={<div className="flex flex-col justify-center items-center align-middle bg-slate-200 h-full w-full"><img src={img} alt="loding..." /><h3 className="mt-15">LODING...</h3></div>}>
+            <NavBar/>
         <Routes>
           <Route index element={<Home/>} />
           <Route  path="/" element={<Home />} />

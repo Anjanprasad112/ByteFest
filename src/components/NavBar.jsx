@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import {  Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import { icons8menusquared,icons8closewindow } from "../assets";
 import img from "../assets/GAT-logo.png";
 
@@ -16,6 +16,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
+
     <nav className="w-full flex p-4 justify-between items-center bg-black z-10">
       <img src={img} alt="gat-logo" className="h-12 md:h-20" />
 
