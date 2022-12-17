@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+:root {
+  --primary-blue: #00d8ff;
+  --primary-purple: #6a00ff;
+}
+
+.blue {
+  color: var(--primary-blue)
+}
+
+.outline {
+  background-color: transparent!important;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold
+  }
+
+  li {
+    @apply p-4
+  }
+
+  button {
+    @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] py-3 px-7 rounded-3xl
+  }
+}
