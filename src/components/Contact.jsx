@@ -18,8 +18,8 @@ const Contact = () => {
     <div>
         <div className="h-96 flex flex-col items-center justify-center"><h1 className="text-center m-2">Contact Us</h1>
         <div className="">
-            <p className="m-4 text-xl">Anoop R - <span><button onClick={callone} className="text-white">Call</button></span></p>
-            <p className="m-4 text-xl">IMPANA -  <span> <button onClick={calltwo} className="text-white">Call</button></span></p>
+            <p className="m-4 text-base">Anoop R - <span><button onClick={callone} className="text-white">Call</button></span></p>
+            <p className="m-4 text-base">IMPANA -  <span> <button onClick={calltwo} className="text-white">Call</button></span></p>
         </div>
          <button className="m-auto p-auto text-white "
             onClick={routeChange}
