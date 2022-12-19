@@ -12,7 +12,7 @@ const Rule = () => {
     <div>
         <div className="flex flex-col justify-center items-center p-5 text-xs">
           <h1 className="mb-2">RULES</h1>
-          <p>
+          <p className="md:text-xl">
         1.	Contest is open to all freshers@GAT who are interested in programming.<br/>
 2.	Participants can be an individual or a team of upto 2 members.<br/>
 3.	 Each participant will have to appear in the Qualifying round individually even if they are participating as teams. <br/> 
@@ -38,7 +38,7 @@ INNOCODE ROUND : <br/>
 
 
             </p>
-            <button className="m-5 text-white flex justify-center items-center"
+            <button className=" text-white flex justify-center items-center"
             onClick={routeChange}
               >
               Back
