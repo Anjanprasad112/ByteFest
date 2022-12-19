@@ -19,11 +19,14 @@ Bytefest – 2022 is focused mainly on creating a proactive learning, socializin
 The competition will be of three levels depending on the scores in the qualifying round. <br/>
 </p>
           </div>
+          <div className="mb-3">
+
           <button className=" text-white flex justify-center items-center "
             onClick={routeChange}
-              >
+            >
               Back
             </button>
+                </div>
         </div>
        
         <Footerone/>
