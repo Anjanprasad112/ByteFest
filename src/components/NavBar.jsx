@@ -1,24 +1,51 @@
 
-import { useState } from "react";
+import { useState,useEffect,useRef } from "react";
 import {Link,Outlet} from "react-router-dom";
 import { icons8menusquared,icons8closewindow } from "../assets";
 import img from "../assets/GAT-logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  let navigate = useNavigate();
+  // let menuRef = useRef();
   let Links =[
           {name:"About",link:"about",id:1},
-         {name:"Annoucements",link:"annoucements",id:2},
+          {name:"Annoucements",link:"annoucements",id:2},
           {name:"Rules",link:"rules",id:3},
           {name:"Contact",link:"contact",id:4},
           
         ];
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
+
+
+  
+  useEffect(() => {
+    document.addEventListener("click",handleClickOutside, true);
+})
+const refOne = useRef();
+  const handleClickOutside = (e) => {
+    if(!refOne.current.contains(e.target)){
+      // console.log("clicked outside");
+      setToggle(false);
+    }
+    else{
+      // console.log("clicked inside");
+      setToggle(true);
+    }
+  }
+  const logo = () => {
+    let p = `/`;
+        navigate(p);
+
+  }
+
 
   return (
 
     <nav className="w-full flex p-4 justify-between items-center bg-black z-10">
-      <img src={img} alt="gat-logo" className="h-12 md:h-20" />
+      <img src={img} alt="gat-logo" className="h-12 md:h-20" onClick={logo} />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {Links.map((link) => (
@@ -42,7 +69,7 @@ const Navbar = () => {
           onClick={() => setToggle(!toggle)}
         />
 
-        <div
+        <div  ref={refOne}
           className={`${
             !toggle ? "hidden" : "flex"
           } p-6 bg-black text-white  absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}

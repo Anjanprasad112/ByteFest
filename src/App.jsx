@@ -11,7 +11,7 @@ import img from './assets/lodinggears.svg';
 
 function App() {
   return (
-    <div>
+    <>
        <BrowserRouter>
           <Suspense fallback={<div className="flex flex-col justify-center items-center align-middle bg-slate-200 h-full w-full"><img src={img} alt="loading..." /><h3 className="mt-15">LODING...</h3></div>}>
             <NavBar/>
@@ -22,12 +22,11 @@ function App() {
           <Route  path="/annoucements" element={<Anno />} />
           <Route  path="/rules" element={<Rule/>}/>
           <Route  path="/contact" element={<Contact />} />
-          {/* </Route> */}
           <Route exact path="*" element={<Error />} />
         </Routes>
           </Suspense>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

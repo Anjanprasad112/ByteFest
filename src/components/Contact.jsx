@@ -16,12 +16,12 @@ const Contact = () => {
     }
   return (
     <div>
-        <div className="h-96 flex flex-col items-center justify-center"><h1 className="text-center m-2">Contact Us</h1>
-        <div className="">
+        <div className="flex flex-col items-center justify-center"><h1 className="text-center m-2">Contact Us</h1>
+        <div>
             <p className="m-4 text-base">Anoop R - <span><button onClick={callone} className="text-white">Call</button></span></p>
             <p className="m-4 text-base">IMPANA -  <span> <button onClick={calltwo} className="text-white">Call</button></span></p>
         </div>
-         <button className="m-auto p-auto text-white "
+         <button className="text-white "
             onClick={routeChange}
               >
               Back
