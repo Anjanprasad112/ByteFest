@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './Footer'
+import Footerone from './Footerone'
 import { useNavigate } from "react-router-dom";
 const About = () => {
     let navigate = useNavigate();
@@ -26,7 +26,7 @@ The competition will be of three levels depending on the scores in the qualifyin
             </button>
         </div>
        
-        <Footer/>
+        <Footerone/>
     </div>
   )
 }
