@@ -10,8 +10,8 @@ const About = () => {
   return (
     <div>
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-center mt-4">ABOUT</h1>
-          <div className="text-center text-sm md:text-xl p-5">
+          <h1 className="text-center mt-1">ABOUT</h1>
+          <div className="text-center text-sm md:text-xl p-3">
             <p>
 Bytefest - 2022 is the right opportunity to showcase your coding abilities and nurture your interest as a coder. <br/>
 Bytefest – 2022 will not only provide the new batch of students a practical approach to problem solving, experimenting and brainstorming, but will also encourage them to put forth their innovative ideas as versatile code. <br/>
@@ -19,7 +19,7 @@ Bytefest – 2022 is focused mainly on creating a proactive learning, socializin
 The competition will be of three levels depending on the scores in the qualifying round. <br/>
 </p>
           </div>
-          <div className="mb-3">
+          <div className="mb-2">
 
           <button className=" text-white flex justify-center items-center "
             onClick={routeChange}
