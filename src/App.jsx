@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
        <BrowserRouter>
-          <Suspense fallback={<div className="flex flex-col justify-center items-center align-middle bg-slate-200 h-full w-full"><img src={img} alt="loding..." /><h3 className="mt-15">LODING...</h3></div>}>
+          <Suspense fallback={<div className="flex flex-col justify-center items-center align-middle bg-slate-200 h-full w-full"><img src={img} alt="loading..." /><h3 className="mt-15">LODING...</h3></div>}>
             <NavBar/>
         <Routes>
           <Route index element={<Home/>} />
