@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import {Link} from "react-router-dom";
+import {Link,Outlet} from "react-router-dom";
 import { icons8menusquared,icons8closewindow } from "../assets";
 import img from "../assets/GAT-logo.png";
 
@@ -62,6 +62,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <Outlet/>
     </nav>
   );
 };
