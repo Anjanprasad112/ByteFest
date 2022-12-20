@@ -69,18 +69,19 @@ const refOne = useRef();
           onClick={() => setToggle(!toggle)}
         />
 
-        <div  ref={refOne}
+        <div 
           className={`${
             !toggle ? "hidden" : "flex"
           } p-6 bg-black text-white  absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
-          <ul className="list-none flex justify-end items-start flex-1 flex-col">
+          <ul  className="list-none flex justify-end items-start flex-1 flex-col">
             {Links.map((link) => (
               <li
                 key={link.id}
                 className={`font-montserrat font-medium cursor-pointer text-[20px]${
                   active === link.name ? "text-white" : "text-slate-400"
                 } `}
+                ref={refOne}
                 onClick={() => setActive(link.name)}
               >
                 <Link to={`${link.link}`}>{link.name}</Link>
